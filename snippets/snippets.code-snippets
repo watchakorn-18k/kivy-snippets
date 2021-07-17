@@ -1,0 +1,30 @@
+{
+    "canvas":{
+    "scope": "kv",
+    "prefix": "canvas",
+    "body": [
+            "canvas:",
+             "    $1:"
+         ],
+         "description": "canvas เป็น root object ที่ใช้สำหรับวาด"
+     },
+"Image":{
+    "scope": "kv",
+    "prefix": "Image",
+    "body": [
+            "Image:",
+             "    source:$1"
+         ],
+         "description": "Image ใช้เพื่อแสดงภาพ"
+     },
+"Button":{
+    "scope": "kv",
+    "prefix": "Button",
+    "body": [
+            "Button:",
+             "    text:'$1'"
+         ],
+         "description": "Image ใช้เพื่อแสดงภาพ"
+     },
+
+}
