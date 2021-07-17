@@ -1,8 +1,8 @@
 {
     "name": "kivy-snippets",
     "publisher": "watchakorn-18k",
-    "displayName": "kivy-snippets",
-    "description": "Kivy Snippet support VS Code ",
+    "displayName": "Kivy-Snippets",
+    "description": "Kivy Snippet and Syntax highlighting support VS Code ภาษาไทย",
     "version": "1.0.1",
     "icon":"images/icons_kv.png",
     "engines": {
@@ -22,6 +22,17 @@
         "url": "https://github.com/watchakorn-18k/kivy-snippets"
       },
     "contributes": {
+        "languages": [{
+            "id": "kv",
+            "aliases": ["Kivy", "kv"],
+            "extensions": [".kv"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "kv",
+            "scopeName": "source.kv",
+            "path": "./syntaxes/kv.tmLanguage.json"
+        }],
         "snippets": [
             {
                 "language": "kv",

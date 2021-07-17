@@ -1,6 +1,5 @@
 {
     "canvas":{
-    "scope": "kv",
     "prefix": "canvas",
     "body": [
             "canvas:",
@@ -9,7 +8,6 @@
          "description": "canvas เป็น root object ที่ใช้สำหรับวาด"
      },
 "Image":{
-    "scope": "kv",
     "prefix": "Image",
     "body": [
             "Image:",
@@ -18,13 +16,27 @@
          "description": "Image ใช้เพื่อแสดงภาพ"
      },
 "Button":{
-    "scope": "kv",
     "prefix": "Button",
     "body": [
             "Button:",
              "    text:'$1'"
          ],
-         "description": "Image ใช้เพื่อแสดงภาพ"
+         "description": "Button เพื่อใช้งานปุ่ม"
      },
-
+"Label:":{
+    "prefix": "Label:",
+    "body": [
+            "Label:",
+             "    text:'$1'"
+         ],
+         "description": "Label เพื่อใช้งานป้าย"
+     },
+"BoxLayout:":{
+    "prefix": "BoxLayout:",
+    "body": [
+            "BoxLayout:",
+             "    orientation:'vertical$1'"
+         ],
+         "description": "BoxLayout จัด  children ในกล่องให้เป็นแนวตั้งหรือแนวนอน"
+     },
 }
