@@ -1,0 +1,30 @@
+{
+    "name": "kivy-snippets",
+    "publisher": "watchakorn-18k",
+    "displayName": "kivy-snippets",
+    "description": "Kivy snippet support Kylang",
+    "version": "1.0.0",
+    "icon":"images/icons_kv.png",
+    "engines": {
+        "vscode": "^1.58.0"
+    },
+    "galleryBanner": {
+        "color": "#0273D4",
+        "theme": "dark"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/johnpapa/vscode-angular-snippets.git"
+      },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "kv",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
