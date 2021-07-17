@@ -3,7 +3,7 @@
     "publisher": "watchakorn-18k",
     "displayName": "kivy-snippets",
     "description": "Kivy Snippet support VS Code ",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icon":"images/icons_kv.png",
     "engines": {
         "vscode": "^1.58.0"
