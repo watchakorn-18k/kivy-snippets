@@ -1,4 +1,4 @@
-<p align="center"><a href="#" ><img src="https://github.com/vscode-icons/vscode-icons/blob/master/icons/file_type_kivy.svg" height="150px" style/></a>
+<p align="center"><a href="#" ><img src="images/icons_kv.png" height="150px" style/></a>
 <br>
   Kivy Snippet support VS Code
   <br>
