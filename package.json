@@ -2,7 +2,7 @@
     "name": "kivy-snippets",
     "publisher": "watchakorn-18k",
     "displayName": "kivy-snippets",
-    "description": "Kivy snippet support Kylang",
+    "description": "Kivy Snippet support VS Code ",
     "version": "1.0.0",
     "icon":"images/icons_kv.png",
     "engines": {
