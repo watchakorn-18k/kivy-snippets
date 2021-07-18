@@ -1,7 +1,22 @@
 # Change Log
 
-All notable changes to the "kivy-snippets" extension will be documented in this file.
+## [1.0.3]
+- Updated Snippet Kivy Added 
+    - size_hint
+    - padding
+    - spacing
+    - color
+    - pos
+    - size
+    - text
+    - More...
 
+## [1.0.2]
+- Displayname fixed
+
+## [1.0.1]
+
+- Sample image attached
 
 ## [1.0.0]
 

@@ -1,125 +1,209 @@
 
 {
-"กำหนดค่า":{
-    "prefix": "#:",
-    "body": [
-            "#:set $1"
-         ],
-         "description": "canvas เป็น root object ที่ใช้สำหรับวาด"
-     },
-    "canvas":{
-    "prefix": "canvas",
-    "body": [
-            "canvas:",
-             "    $1:"
-         ],
-         "description": "canvas เป็น root object ที่ใช้สำหรับวาด"
-     },
-"Image":{
-    "prefix": "Image",
-    "body": [
-            "Image:",
-             "    source:$1"
-         ],
-         "description": "Image ใช้เพื่อแสดงภาพ"
-     },
-"Button":{
-    "prefix": "Button",
-    "body": [
-            "Button:",
-             "    text:'$1'"
-         ],
-         "description": "Button เพื่อใช้งานปุ่ม"
-     },
-"Label:":{
-    "prefix": "Label:",
-    "body": [
-            "Label:",
-             "    text:'$1'"
-         ],
-         "description": "Label เพื่อใช้งานป้าย"
-     },
-"BoxLayout:":{
-    "prefix": "BoxLayout:",
-    "body": [
-            "BoxLayout:",
-             "    orientation:'vertical$1'"
-         ],
-         "description": "BoxLayout จัด  children ในกล่องให้เป็นแนวตั้งหรือแนวนอน"
-     },
-"TextInput:":{
-    "prefix": "TextInput:",
-    "body": [
-            "TextInput:",
-             "    id:",
-             "    text:'text$2'"
-         ],
-         "description": "TextInput เครื่องมือกล่องข้อความธรรมดาที่สามารถแก้ไขได้"
-     },
-"Switch:":{
-    "prefix": "Switch:",
-    "body": [
-            "Switch:",
-             "    id:",
-             "    text:'text$2'"
-         ],
-         "description": "Switch เครื่องมือที่สามารถ เปิดใช้งาน และ ปิดใช้งาน เหมือนเปิดปิดโคมไฟ ผู้ใช้สามารถเลื่อนไปทางซ้ายหรือขวาเพื่อเปิดใช้งานและปิดใช้งานได้"
-     },
-"Slider:":{
-    "prefix": "Slider:",
-    "body": [
-            "Slider:",
-             "    id:",
-             "    text:'text$2'",
-             "    min:0",
-             "    max:100",
-             "    value:20",
-             "    orientation:"
-
-         ],
-         "description": "Slider เครื่องมือที่คล้ายกับแถบเลื่อน รองรับการวางแนวแนวนอนและแนวตั้ง ค่าต่ำสุด/สูงสุด และค่าเริ่มต้น"
-     },
-"ToggleButton:":{
-    "prefix": "ToggleButton:",
-    "body": [
-            "ToggleButton:",
-             "    id:",
-             "    text:'text$2'"
-         ],
-         "description": "ToggleButton ครื่องมือที่ใช้ในการมองเห็นแถบความคืบหน้าของงานบางอย่าง ขณะนี้รองรับเฉพาะโหมดแนวนอนเท่านั้น: โหมดแนวตั้งยังไม่พร้อมใช้งาน"
-     },
-"ProgressBar:":{
-    "prefix": "ProgressBar:",
-    "body": [
-            "ProgressBar:",
-             "    max:100",
-             "    value:$1"
-         ],
-         "description": "ProgressBar เครื่องมือที่ทำงานคล้ายกับช่องทำเครื่องหมาย เมื่อคุณแตะหรือคลิก สถานะจะสลับไปมาระหว่าง 'normal' กับ 'down' และสถานะ 'down' จะค้างอยู่อย่างนั้นจนกว่าจะกดอีกรอบถึงจะกลับมาเป็น 'normal' เหมือนเดิม"
-     },
-     "Line:":{
-        "prefix": "Line:",
+    "#:set กำหนดค่า":{
+        "prefix": "#:set",
         "body": [
-                "Line:",
-                 "    1$:",
+                "#:set a 100$1"
+             ],
+             "description": "#:set ใช้ในการกำหนดค่าหรือสร้างตัวแปร ที่ใช้สำหรับวาด ตัวอย่าง #:set a 100  a มีค่า 100 "
+         },
+    "นำเข้าโมดูล":{
+        "prefix": "@",
+        "body": [
+                "@${1|AnchorLayout,StackLayout,GridLayout,Button,BoxLayout,Widget|}"
+             ],
+             "description": "นำเข้าโมดูล ใช้ในแบ่งพื้นที่แบ่งออกเป็นคอลัมน์และแถว จากนั้นก็เพิ่ม Widget ลงไปใน เซลล์ "
+         },
+        "canvas":{
+        "prefix": "canvas",
+        "body": [
+                "canvas:",
+                 "    $1:"
+             ],
+             "description": "canvas เป็น root object ที่ใช้สำหรับวาด"
+         },
+    "Image":{
+        "prefix": "Image",
+        "body": [
+                "Image:",
+                 "    source:$1"
+             ],
+             "description": "Image ใช้เพื่อแสดงภาพ"
+         },
+    "Button":{
+        "prefix": "Button",
+        "body": [
+                "Button:",
+                 "    text:'$1'"
+             ],
+             "description": "Button เพื่อใช้งานปุ่ม"
+         },
+    "Label:":{
+        "prefix": "Label:",
+        "body": [
+                "Label:",
+                 "    text:'$1'"
+             ],
+             "description": "Label เพื่อใช้งานป้าย"
+         },
+    "BoxLayout:":{
+        "prefix": "BoxLayout:",
+        "body": [
+                "BoxLayout:",
+                 "    orientation:'vertical$1'"
+             ],
+             "description": "BoxLayout จัด  children ในกล่องให้เป็นแนวตั้งหรือแนวนอน"
+         },
+    "TextInput:":{
+        "prefix": "TextInput:",
+        "body": [
+                "TextInput:",
+                 "    id:",
+                 "    text:'text$2'"
+             ],
+             "description": "TextInput เครื่องมือกล่องข้อความธรรมดาที่สามารถแก้ไขได้"
+         },
+    "Switch:":{
+        "prefix": "Switch:",
+        "body": [
+                "Switch:",
+                 "    id:",
+                 "    text:'text$2'"
+             ],
+             "description": "Switch เครื่องมือที่สามารถ เปิดใช้งาน และ ปิดใช้งาน เหมือนเปิดปิดโคมไฟ ผู้ใช้สามารถเลื่อนไปทางซ้ายหรือขวาเพื่อเปิดใช้งานและปิดใช้งานได้"
+         },
+    "Slider:":{
+        "prefix": "Slider:",
+        "body": [
+                "Slider:",
+                 "    id:",
+                 "    text:'text$2'",
+                 "    min:0",
+                 "    max:100",
+                 "    value:20",
+                 "    orientation:"
     
              ],
-             "description": "Line เครื่องมือที่ใชในการสร้างเส้น"
+             "description": "Slider เครื่องมือที่คล้ายกับแถบเลื่อน รองรับการวางแนวแนวนอนและแนวตั้ง ค่าต่ำสุด/สูงสุด และค่าเริ่มต้น"
          },
-"Rectangle:":{
-    "prefix": "Rectangle:",
-    "body": [
-            "Rectangle:",
-             "    pos:$1",
-         ],
-         "description": "Rectangle คุณสมบัตินี้ในการสร้างรูปสี่เหลี่ยมผืนผ้าโดยไม่ต้องคำนวณด้วย Points คุณสามารถใช้การตั้งของคุณสมบัตินี้ได้เท่านั้น ไม่สามารถรับค่าได้"
-     },
-"Ellipse:":{
-    "prefix": "Ellipse:",
-    "body": [
-            "Ellipse:",
-             "    pos:$1",
-         ],
-         "description": "Ellipse คุณสมบัตินี้ในการสร้างวงรีโดยไม่ต้องคำนวณด้วย Points คุณสามารถใช้การตั้งของคุณสมบัตินี้ได้เท่านั้น ไม่สามารถรับค่าได้"
-     },
-}
+    "ToggleButton:":{
+        "prefix": "ToggleButton:",
+        "body": [
+                "ToggleButton:",
+                 "    id:",
+                 "    text:'text$2'"
+             ],
+             "description": "ToggleButton ครื่องมือที่ใช้ในการมองเห็นแถบความคืบหน้าของงานบางอย่าง ขณะนี้รองรับเฉพาะโหมดแนวนอนเท่านั้น: โหมดแนวตั้งยังไม่พร้อมใช้งาน"
+         },
+    "ProgressBar:":{
+        "prefix": "ProgressBar:",
+        "body": [
+                "ProgressBar:",
+                 "    max:100",
+                 "    value:$1"
+             ],
+             "description": "ProgressBar เครื่องมือที่ทำงานคล้ายกับช่องทำเครื่องหมาย เมื่อคุณแตะหรือคลิก สถานะจะสลับไปมาระหว่าง 'normal' กับ 'down' และสถานะ 'down' จะค้างอยู่อย่างนั้นจนกว่าจะกดอีกรอบถึงจะกลับมาเป็น 'normal' เหมือนเดิม"
+         },
+         "Line:":{
+            "prefix": "Line:",
+            "body": [
+                    "Line:",
+                     "    1$:",
+        
+                 ],
+                 "description": "Line เครื่องมือที่ใชในการสร้างเส้น"
+             },
+    "Rectangle:":{
+        "prefix": "Rectangle:",
+        "body": [
+                "Rectangle:",
+                 "    pos:$1",
+             ],
+             "description": "Rectangle คุณสมบัตินี้ในการสร้างรูปสี่เหลี่ยมผืนผ้าโดยไม่ต้องคำนวณด้วย Points คุณสามารถใช้การตั้งของคุณสมบัตินี้ได้เท่านั้น ไม่สามารถรับค่าได้"
+         },
+    "Ellipse:":{
+        "prefix": "Ellipse",
+        "body": [
+                "Ellipse:",
+                 "    pos:$1",
+             ],
+             "description": "Ellipse คุณสมบัตินี้ในการสร้างวงรีโดยไม่ต้องคำนวณด้วย Points คุณสามารถใช้การตั้งของคุณสมบัตินี้ได้เท่านั้น ไม่สามารถรับค่าได้"
+         },
+    "color:":{
+        "prefix": "color",
+        "body": [
+                "color: 1 , 0 , 0 , 1$1",
+             ],
+             "description": "color คุณสมบัตินี้คือการใส่สี โดย r คือ แดง g คือ เขียว b คือ น้ำเงิน a คือ อัลฟ่า เช่นหากต้องการสีแดง color:1,0,0,1"
+         },
+    "text:":{
+        "prefix": "text",
+        "body": [
+                "text: '${1:ข้อความ}'",
+             ],
+             "description": "text คุณสมบัตินี้ใช้แสดงข้อความ"
+         },
+    "pos:":{
+        "prefix": "pos",
+        "body": [
+                "pos: '${1:200}dp','${1:200}dp'",
+             ],
+             "description": "posistion คุณสมบัตินี้ใช้ระบุตำแหน่ง"
+         },
+    "size:":{
+        "prefix": "size",
+        "body": [
+                "size: '${1:200}dp','${1:200}dp'",
+             ],
+             "description": "size คุณสมบัตินี้ใช้ระบุขนาด"
+         },
+    "font_name:":{
+        "prefix": "font_name",
+        "body": [
+                "font_name: '${1:angsana.ttc}'",
+             ],
+             "description": "font_name คุณสมบัตินี้ใช้ระบุขนาด"
+         },
+    "spacing:":{
+        "prefix": "spacing",
+        "body": [
+                "spacing: '${1:10}dp'",
+             ],
+             "description": "spacing คุณสมบัตินี้ใช้ระบุระยะห่างระหว่างโหนดลูก หรือ Widget มีหน่วยเป็น Pixel "
+         },
+    "orientation:":{
+        "prefix": "orientation",
+        "body": [
+                "orientation: '${1|vertical,horizontal|}'",
+             ],
+             "description": "orientation คุณสมบัตินี้เป็นการวางแนวของเค้าโครงโดย สามารถเป็น 'vertical' แนวตั้ง หรือ 'horizontal' แนวนอน  "
+         },
+    "size_hint:":{
+        "prefix": "size_hint",
+        "body": [
+                "size_hint: .$1,.$1",
+             ],
+             "description": "size_hint : ใช้สำหรับปรับขนาดปุ่มแบบไดนามิกและระบุขนาด มันมีอาร์กิวเมนต์สองอย่างคือ ความกว้างและความสูง มันสามารถใช้เป็นค่า float ได้ โดยค่าเริ่มต้น วิดเจ็ตทั้งหมดจะเป็น size_hint=(1, 1)"
+         },
+    "anchor_y:":{
+        "prefix": "anchor_y",
+        "body": [
+                "anchor_y: '${1|top,center,bottom|}'",
+             ],
+             "description": "anchor_y คุณสมบัตินี้คือการปรับตำแหน่ง  anchor แนวตั้งเพื่อใช้ปรับขนาดและการหมุน ค่าเริ่มต้นเป็น 0  "
+         },
+    "anchor_x:":{
+        "prefix": "anchor_x",
+        "body": [
+                "anchor_x: '${1|left,center,right|}'",
+             ],
+             "description": "anchor_x คุณสมบัตินี้คือการปรับตำแหน่ง  anchor แนวตั้งเพื่อใช้ปรับขนาดและการหมุน ค่าเริ่มต้นเป็น 0  "
+         },
+    "padding:":{
+        "prefix": "padding",
+        "body": [
+                "padding: ('$1dp', '$1dp', '$1dp', '$1dp')",
+             ],
+             "description": "padding คุณสมบัตินี้คือการปรับตำแหน่ง  anchor แนวตั้งเพื่อใช้ปรับขนาดและการหมุน ค่าเริ่มต้นเป็น 0  "
+         },
+    }
