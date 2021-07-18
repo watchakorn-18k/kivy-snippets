@@ -7,6 +7,8 @@
 
 [![Marketplace Version](https://vsmarketplacebadge.apphb.com/version/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets) [![Installs](https://vsmarketplacebadge.apphb.com/installs/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets) [![Rating](https://vsmarketplacebadge.apphb.com/rating/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets) [![Build Status](https://travis-ci.org/formulahendry/vscode-auto-rename-tag.svg?branch=master)](#)
 
+<p align="center" ><a href="#" ><kbd> <img src="images/use_snippet_1.gif"  width="800"/></kbd></a></p> 
+
 
 ## เริ่มแบบด่วน
 - ติดตั้งส่วนขยาย 
@@ -44,8 +46,9 @@
 }
 ```
 
-
 # Change Log
+
+
 
 ## [1.0.3]
 - Updated Snippet Kivy Added 
