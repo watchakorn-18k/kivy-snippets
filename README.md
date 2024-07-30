@@ -1,32 +1,22 @@
 <p align="center"><a href="#" ><img src="images/icons_kv.png" height="150px" style/></a>
 <br>
-  Kivy Snippet support VS Code
+  Kivy Snippet support VSCode
   <br>
-  Dev. Porton
+  Developer : watchakorn-18k
 </p>
 
-[![Marketplace Version](https://vsmarketplacebadge.apphb.com/version/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets) [![Installs](https://vsmarketplacebadge.apphb.com/installs/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets) [![Rating](https://vsmarketplacebadge.apphb.com/rating/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets) [![Build Status](https://travis-ci.org/formulahendry/vscode-auto-rename-tag.svg?branch=master)](#)
+<div align="center">
 
-<p align="center" ><a href="#" ><kbd> <img src="images/use_snippet_1.gif"  width="800"/></kbd></a></p> 
+[![Marketplace Version](https://vsmarketplacebadges.dev/version/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets) 
+[![Installs](https://vsmarketplacebadges.dev/installs/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets) 
+[![Rating](https://vsmarketplacebadges.dev/rating/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets)
+[![Trending](https://vsmarketplacebadges.dev/trending-weekly/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets)
 
 
-## เริ่มแบบด่วน
-- ติดตั้งส่วนขยาย 
-- ติดตั้ง Python
 
-## หลังจากติดตั้งแล้วให้เพิ่มคำสั่งต่อนี้ไป
-- กด Ctrl + Shift + P 
-- กรอกคำว่า preferences:Open Settings (JSON) ลงไป
-- กด Enter
-- คัดลอกคำสั่งด้านล่างไปใส่แล้ว เปิดปิดโปรแกรมใหม่
-```json
-    },
+<p align="center" ><a href="#" ><kbd> <img src="https://github.com/watchakorn-18k/kivy-snippets/blob/master/images/use_snippet_1.gif?raw=true"  width="800"/></kbd></a></p> 
 
-    "editor.snippetSuggestions":"top",
-    "editor.tabCompletion":true
-       
-}
-```
+</div>
 
 ## Quick Start
 - install extension
@@ -47,7 +37,8 @@
 ```
 
 # Change Log
-
+## [1.0.4]
+- Change language to English
 
 
 ## [1.0.3]

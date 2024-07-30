@@ -1,209 +1,206 @@
-
 {
-    "#:set กำหนดค่า":{
+    "#:set Assign Value": {
         "prefix": "#:set",
         "body": [
-                "#:set a 100$1"
-             ],
-             "description": "#:set ใช้ในการกำหนดค่าหรือสร้างตัวแปร ที่ใช้สำหรับวาด ตัวอย่าง #:set a 100  a มีค่า 100 "
-         },
-    "นำเข้าโมดูล":{
+            "#:set a 100$1"
+        ],
+        "description": "#:set is used to assign values or create variables for drawing. For example, #:set a 100 sets 'a' to 100."
+    },
+    "Import Module": {
         "prefix": "@",
         "body": [
-                "@${1|AnchorLayout,StackLayout,GridLayout,Button,BoxLayout,Widget|}"
-             ],
-             "description": "นำเข้าโมดูล ใช้ในแบ่งพื้นที่แบ่งออกเป็นคอลัมน์และแถว จากนั้นก็เพิ่ม Widget ลงไปใน เซลล์ "
-         },
-        "canvas":{
+            "@${1|AnchorLayout,StackLayout,GridLayout,Button,BoxLayout,Widget|}"
+        ],
+        "description": "Import modules used to divide the space into columns and rows, then add Widgets to the cells."
+    },
+    "canvas": {
         "prefix": "canvas",
         "body": [
-                "canvas:",
-                 "    $1:"
-             ],
-             "description": "canvas เป็น root object ที่ใช้สำหรับวาด"
-         },
-    "Image":{
+            "canvas:",
+            "    $1:"
+        ],
+        "description": "canvas is the root object used for drawing."
+    },
+    "Image": {
         "prefix": "Image",
         "body": [
-                "Image:",
-                 "    source:$1"
-             ],
-             "description": "Image ใช้เพื่อแสดงภาพ"
-         },
-    "Button":{
+            "Image:",
+            "    source:$1"
+        ],
+        "description": "Image is used to display images."
+    },
+    "Button": {
         "prefix": "Button",
         "body": [
-                "Button:",
-                 "    text:'$1'"
-             ],
-             "description": "Button เพื่อใช้งานปุ่ม"
-         },
-    "Label:":{
+            "Button:",
+            "    text:'$1'"
+        ],
+        "description": "Button is used for creating buttons."
+    },
+    "Label:": {
         "prefix": "Label:",
         "body": [
-                "Label:",
-                 "    text:'$1'"
-             ],
-             "description": "Label เพื่อใช้งานป้าย"
-         },
-    "BoxLayout:":{
+            "Label:",
+            "    text:'$1'"
+        ],
+        "description": "Label is used for displaying labels."
+    },
+    "BoxLayout:": {
         "prefix": "BoxLayout:",
         "body": [
-                "BoxLayout:",
-                 "    orientation:'vertical$1'"
-             ],
-             "description": "BoxLayout จัด  children ในกล่องให้เป็นแนวตั้งหรือแนวนอน"
-         },
-    "TextInput:":{
+            "BoxLayout:",
+            "    orientation:'vertical$1'"
+        ],
+        "description": "BoxLayout arranges children in a box either vertically or horizontally."
+    },
+    "TextInput:": {
         "prefix": "TextInput:",
         "body": [
-                "TextInput:",
-                 "    id:",
-                 "    text:'text$2'"
-             ],
-             "description": "TextInput เครื่องมือกล่องข้อความธรรมดาที่สามารถแก้ไขได้"
-         },
-    "Switch:":{
+            "TextInput:",
+            "    id:",
+            "    text:'text$2'"
+        ],
+        "description": "TextInput is a simple editable text box."
+    },
+    "Switch:": {
         "prefix": "Switch:",
         "body": [
-                "Switch:",
-                 "    id:",
-                 "    text:'text$2'"
-             ],
-             "description": "Switch เครื่องมือที่สามารถ เปิดใช้งาน และ ปิดใช้งาน เหมือนเปิดปิดโคมไฟ ผู้ใช้สามารถเลื่อนไปทางซ้ายหรือขวาเพื่อเปิดใช้งานและปิดใช้งานได้"
-         },
-    "Slider:":{
+            "Switch:",
+            "    id:",
+            "    text:'text$2'"
+        ],
+        "description": "Switch is used to toggle between on and off states, like a light switch. Users can slide left or right to activate or deactivate."
+    },
+    "Slider:": {
         "prefix": "Slider:",
         "body": [
-                "Slider:",
-                 "    id:",
-                 "    text:'text$2'",
-                 "    min:0",
-                 "    max:100",
-                 "    value:20",
-                 "    orientation:"
-    
-             ],
-             "description": "Slider เครื่องมือที่คล้ายกับแถบเลื่อน รองรับการวางแนวแนวนอนและแนวตั้ง ค่าต่ำสุด/สูงสุด และค่าเริ่มต้น"
-         },
-    "ToggleButton:":{
+            "Slider:",
+            "    id:",
+            "    text:'text$2'",
+            "    min:0",
+            "    max:100",
+            "    value:20",
+            "    orientation:"
+        ],
+        "description": "Slider is a tool similar to a scrollbar, supporting horizontal and vertical orientations, minimum/maximum values, and default value."
+    },
+    "ToggleButton:": {
         "prefix": "ToggleButton:",
         "body": [
-                "ToggleButton:",
-                 "    id:",
-                 "    text:'text$2'"
-             ],
-             "description": "ToggleButton ครื่องมือที่ใช้ในการมองเห็นแถบความคืบหน้าของงานบางอย่าง ขณะนี้รองรับเฉพาะโหมดแนวนอนเท่านั้น: โหมดแนวตั้งยังไม่พร้อมใช้งาน"
-         },
-    "ProgressBar:":{
+            "ToggleButton:",
+            "    id:",
+            "    text:'text$2'"
+        ],
+        "description": "ToggleButton works like a checkbox. When tapped or clicked, it toggles between 'normal' and 'down' states, remaining 'down' until pressed again."
+    },
+    "ProgressBar:": {
         "prefix": "ProgressBar:",
         "body": [
-                "ProgressBar:",
-                 "    max:100",
-                 "    value:$1"
-             ],
-             "description": "ProgressBar เครื่องมือที่ทำงานคล้ายกับช่องทำเครื่องหมาย เมื่อคุณแตะหรือคลิก สถานะจะสลับไปมาระหว่าง 'normal' กับ 'down' และสถานะ 'down' จะค้างอยู่อย่างนั้นจนกว่าจะกดอีกรอบถึงจะกลับมาเป็น 'normal' เหมือนเดิม"
-         },
-         "Line:":{
-            "prefix": "Line:",
-            "body": [
-                    "Line:",
-                     "    1$:",
-        
-                 ],
-                 "description": "Line เครื่องมือที่ใชในการสร้างเส้น"
-             },
-    "Rectangle:":{
+            "ProgressBar:",
+            "    max:100",
+            "    value:$1"
+        ],
+        "description": "ProgressBar is used to show progress for tasks. Currently, it only supports horizontal mode; vertical mode is not yet available."
+    },
+    "Line:": {
+        "prefix": "Line:",
+        "body": [
+            "Line:",
+            "    1$:",
+        ],
+        "description": "Line is used for creating lines."
+    },
+    "Rectangle:": {
         "prefix": "Rectangle:",
         "body": [
-                "Rectangle:",
-                 "    pos:$1",
-             ],
-             "description": "Rectangle คุณสมบัตินี้ในการสร้างรูปสี่เหลี่ยมผืนผ้าโดยไม่ต้องคำนวณด้วย Points คุณสามารถใช้การตั้งของคุณสมบัตินี้ได้เท่านั้น ไม่สามารถรับค่าได้"
-         },
-    "Ellipse:":{
+            "Rectangle:",
+            "    pos:$1",
+        ],
+        "description": "Rectangle is used for creating rectangles without calculating points. You can use this setting, but cannot get values from it."
+    },
+    "Ellipse:": {
         "prefix": "Ellipse",
         "body": [
-                "Ellipse:",
-                 "    pos:$1",
-             ],
-             "description": "Ellipse คุณสมบัตินี้ในการสร้างวงรีโดยไม่ต้องคำนวณด้วย Points คุณสามารถใช้การตั้งของคุณสมบัตินี้ได้เท่านั้น ไม่สามารถรับค่าได้"
-         },
-    "color:":{
+            "Ellipse:",
+            "    pos:$1",
+        ],
+        "description": "Ellipse is used for creating ellipses without calculating points. You can use this setting, but cannot get values from it."
+    },
+    "color:": {
         "prefix": "color",
         "body": [
-                "color: 1 , 0 , 0 , 1$1",
-             ],
-             "description": "color คุณสมบัตินี้คือการใส่สี โดย r คือ แดง g คือ เขียว b คือ น้ำเงิน a คือ อัลฟ่า เช่นหากต้องการสีแดง color:1,0,0,1"
-         },
-    "text:":{
+            "color: 1 , 0 , 0 , 1$1",
+        ],
+        "description": "color sets the color using RGBA values. For example, color:1,0,0,1 sets the color to red."
+    },
+    "text:": {
         "prefix": "text",
         "body": [
-                "text: '${1:ข้อความ}'",
-             ],
-             "description": "text คุณสมบัตินี้ใช้แสดงข้อความ"
-         },
-    "pos:":{
+            "text: '${1:Text}'",
+        ],
+        "description": "text is used for displaying text."
+    },
+    "pos:": {
         "prefix": "pos",
         "body": [
-                "pos: '${1:200}dp','${1:200}dp'",
-             ],
-             "description": "posistion คุณสมบัตินี้ใช้ระบุตำแหน่ง"
-         },
-    "size:":{
+            "pos: '${1:200}dp','${1:200}dp'",
+        ],
+        "description": "position is used to set the position."
+    },
+    "size:": {
         "prefix": "size",
         "body": [
-                "size: '${1:200}dp','${1:200}dp'",
-             ],
-             "description": "size คุณสมบัตินี้ใช้ระบุขนาด"
-         },
-    "font_name:":{
+            "size: '${1:200}dp','${1:200}dp'",
+        ],
+        "description": "size is used to set the size."
+    },
+    "font_name:": {
         "prefix": "font_name",
         "body": [
-                "font_name: '${1:angsana.ttc}'",
-             ],
-             "description": "font_name คุณสมบัตินี้ใช้ระบุขนาด"
-         },
-    "spacing:":{
+            "font_name: '${1:angsana.ttc}'",
+        ],
+        "description": "font_name is used to set the font."
+    },
+    "spacing:": {
         "prefix": "spacing",
         "body": [
-                "spacing: '${1:10}dp'",
-             ],
-             "description": "spacing คุณสมบัตินี้ใช้ระบุระยะห่างระหว่างโหนดลูก หรือ Widget มีหน่วยเป็น Pixel "
-         },
-    "orientation:":{
+            "spacing: '${1:10}dp'",
+        ],
+        "description": "spacing sets the distance between child nodes or Widgets, measured in pixels."
+    },
+    "orientation:": {
         "prefix": "orientation",
         "body": [
-                "orientation: '${1|vertical,horizontal|}'",
-             ],
-             "description": "orientation คุณสมบัตินี้เป็นการวางแนวของเค้าโครงโดย สามารถเป็น 'vertical' แนวตั้ง หรือ 'horizontal' แนวนอน  "
-         },
-    "size_hint:":{
+            "orientation: '${1|vertical,horizontal|}'",
+        ],
+        "description": "orientation sets the layout orientation to either 'vertical' or 'horizontal'."
+    },
+    "size_hint:": {
         "prefix": "size_hint",
         "body": [
-                "size_hint: .$1,.$1",
-             ],
-             "description": "size_hint : ใช้สำหรับปรับขนาดปุ่มแบบไดนามิกและระบุขนาด มันมีอาร์กิวเมนต์สองอย่างคือ ความกว้างและความสูง มันสามารถใช้เป็นค่า float ได้ โดยค่าเริ่มต้น วิดเจ็ตทั้งหมดจะเป็น size_hint=(1, 1)"
-         },
-    "anchor_y:":{
+            "size_hint: .$1,.$1",
+        ],
+        "description": "size_hint is used for dynamically adjusting button sizes, with arguments for width and height. It can be a float value, with the default being size_hint=(1, 1)."
+    },
+    "anchor_y:": {
         "prefix": "anchor_y",
         "body": [
-                "anchor_y: '${1|top,center,bottom|}'",
-             ],
-             "description": "anchor_y คุณสมบัตินี้คือการปรับตำแหน่ง  anchor แนวตั้งเพื่อใช้ปรับขนาดและการหมุน ค่าเริ่มต้นเป็น 0  "
-         },
-    "anchor_x:":{
+            "anchor_y: '${1|top,center,bottom|}'",
+        ],
+        "description": "anchor_y sets the vertical anchor position for scaling and rotation. Default value is 0."
+    },
+    "anchor_x:": {
         "prefix": "anchor_x",
         "body": [
-                "anchor_x: '${1|left,center,right|}'",
-             ],
-             "description": "anchor_x คุณสมบัตินี้คือการปรับตำแหน่ง  anchor แนวตั้งเพื่อใช้ปรับขนาดและการหมุน ค่าเริ่มต้นเป็น 0  "
-         },
-    "padding:":{
+            "anchor_x: '${1|left,center,right|}'",
+        ],
+        "description": "anchor_x sets the horizontal anchor position for scaling and rotation. Default value is 0."
+    },
+    "padding:": {
         "prefix": "padding",
         "body": [
-                "padding: ('$1dp', '$1dp', '$1dp', '$1dp')",
-             ],
-             "description": "padding คุณสมบัตินี้คือการปรับตำแหน่ง  anchor แนวตั้งเพื่อใช้ปรับขนาดและการหมุน ค่าเริ่มต้นเป็น 0  "
-         },
-    }
+            "padding: ('$1dp', '$1dp', '$1dp', '$1dp')",
+        ],
+        "description": "padding sets the space between the edges of an element and its content. Default value is 0."
+    },
+}
