@@ -7,10 +7,10 @@
 
 <div align="center">
 
-[![Marketplace Version](https://vsmarketplacebadges.dev/version/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets) 
-[![Installs](https://vsmarketplacebadges.dev/installs/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets) 
-[![Rating](https://vsmarketplacebadges.dev/rating/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets)
-[![Trending](https://vsmarketplacebadges.dev/trending-weekly/watchakorn-18k.kivy-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets)
+[![Marketplace Version](https://vsmarketplacebadges.dev/version/watchakorn-18k.kivy-snippets.png)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets) 
+[![Installs](https://vsmarketplacebadges.dev/installs/watchakorn-18k.kivy-snippets.jpeg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets) 
+[![Rating](https://vsmarketplacebadges.dev/rating/watchakorn-18k.kivy-snippets.jpeg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets)
+[![Trending](https://vsmarketplacebadges.dev/trending-weekly/watchakorn-18k.kivy-snippets.jpeg)](https://marketplace.visualstudio.com/items?itemName=watchakorn-18k.kivy-snippets)
 
 
 
