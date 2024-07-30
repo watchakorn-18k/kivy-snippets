@@ -3,8 +3,8 @@
     "publisher": "watchakorn-18k",
     "displayName": "Kivy-Snippet",
     "description": "Kivy Snippet and Syntax highlighting support VS Code มีภาษาไทย",
-    "version": "1.0.3",
-    "icon":"images/icons_kv.png",
+    "version": "1.0.4",
+    "icon": "images/icons_kv.png",
     "engines": {
         "vscode": "^1.58.0"
     },
@@ -17,22 +17,31 @@
         "Programming Languages",
         "Snippets"
     ],
-      "repository": {
+    "repository": {
         "type": "git",
         "url": "https://github.com/watchakorn-18k/kivy-snippets"
-      },
+    },
     "contributes": {
-        "languages": [{
-            "id": "kv",
-            "aliases": ["Kivy", "kv"],
-            "extensions": [".kv"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "kv",
-            "scopeName": "source.kv",
-            "path": "./syntaxes/kv.tmLanguage.json"
-        }],
+        "languages": [
+            {
+                "id": "kv",
+                "aliases": [
+                    "Kivy",
+                    "kv"
+                ],
+                "extensions": [
+                    ".kv"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "kv",
+                "scopeName": "source.kv",
+                "path": "./syntaxes/kv.tmLanguage.json"
+            }
+        ],
         "snippets": [
             {
                 "language": "kv",

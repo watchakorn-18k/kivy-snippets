@@ -1,4 +1,6 @@
 # Change Log
+## [1.0.4]
+- Change language to English
 
 ## [1.0.3]
 - Updated Snippet Kivy Added 
