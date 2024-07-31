@@ -1,6 +1,6 @@
 <p align="center"><a href="#" ><img src="images/icons_kv.png" height="150px" style/></a>
 <br>
-  Kivy Snippet support VSCode
+  Kivy Snippet support VSCode (.kv)
   <br>
   Developer : watchakorn-18k
 </p>
@@ -19,8 +19,9 @@
 </div>
 
 ## Quick Start
-- install extension
-- install Python
+- Install Extension
+- Install Python
+- Install Kivy
 
 ## After installing add the following commands
 - Hold Ctrl + Shift + P 
@@ -32,13 +33,19 @@
 
     "editor.snippetSuggestions":"top",
     "editor.tabCompletion":true
-       
 }
 ```
 
 # Change Log
+## [1.0.6]
+- Change Description
+
+## [1.0.5]
+- Small Update
+
 ## [1.0.4]
 - Change language to English
+- Small Update
 
 
 ## [1.0.3]

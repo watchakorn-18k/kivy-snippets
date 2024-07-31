@@ -2,8 +2,8 @@
     "name": "kivy-snippets",
     "publisher": "watchakorn-18k",
     "displayName": "Kivy-Snippet",
-    "description": "Kivy Snippet and Syntax highlighting support VS Code มีภาษาไทย",
-    "version": "1.0.4",
+    "description": "Kivy Snippet and Syntax highlighting support VSCode",
+    "version": "1.0.6",
     "icon": "images/icons_kv.png",
     "engines": {
         "vscode": "^1.58.0"
@@ -48,5 +48,9 @@
                 "path": "./snippets/snippets.code-snippets"
             }
         ]
+    },
+    "pricing": "Free",
+    "sponsor": {
+        "url": "https://github.com/sponsors/watchakorn-18k"
     }
 }

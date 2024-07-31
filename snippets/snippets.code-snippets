@@ -2,7 +2,7 @@
     "#:set Assign Value": {
         "prefix": "#:set",
         "body": [
-            "#:set a 100$1"
+            "#:set ${1:name} ${2:value}"
         ],
         "description": "#:set is used to assign values or create variables for drawing. For example, #:set a 100 sets 'a' to 100."
     },
@@ -33,7 +33,8 @@
         "prefix": "Button",
         "body": [
             "Button:",
-            "    text:'$1'"
+            "    text: '${1:Button Text}'",
+            "    on_press: ${2:callback_function}"
         ],
         "description": "Button is used for creating buttons."
     },
@@ -57,8 +58,9 @@
         "prefix": "TextInput:",
         "body": [
             "TextInput:",
-            "    id:",
-            "    text:'text$2'"
+            "    id: '${1:id}'",
+            "    text: '${2:Placeholder text}'",
+            "    hint_text: '${3:Hint text}'"
         ],
         "description": "TextInput is a simple editable text box."
     },
